@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  /* html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  } */
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;    
+}
+
+.card {
+    color: #fff;
+    padding: 1em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    margin: 1em;
+    background-image: url(/img/wp9911995-mountain-anime-wallpapers\.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-transform: capitalize;
+    transition: 0.4s ease-in-out;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    background: #7c7c7c2b;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background: #7c7c7c6b;;
+}
+.search-bar{
+    /* border: none; */
+    border: 1px solid #fff;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    background: #0f0f0f2b;
+    color: #fff;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 100px);
+    font-weight: 500;
+}
+  
+.weather {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    color: #fff;
+    padding: 20px;
+}
+.icon {
+    width: 50px;
+}
+
+.loading {
+    visibility: hidden;
+}
+.card.before {
+    height: 9%;
+}
+
+
+@media screen and (max-width: 450px){
+    .card  {
+        max-width: 350px;
+        height: 450px;
+    }
+    .weather h2{
+        font-size: 22px;
+    }
+}
